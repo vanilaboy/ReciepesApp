@@ -32,32 +32,10 @@
             android:orientation="vertical"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/linearLayout"
             >
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/card_view"
-                style="@style/MyCardViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="1dp"
-                android:layout_marginRight="1dp"
 
-                app:cardCornerRadius="2dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-                <TextView
-                    android:id="@+id/info_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical|center_horizontal|top"
-                    android:text="Card Texxxxxxxxxt"
-                    android:textColor="@color/cardTextColor"
-                    android:textSize="36sp" />
-            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 
