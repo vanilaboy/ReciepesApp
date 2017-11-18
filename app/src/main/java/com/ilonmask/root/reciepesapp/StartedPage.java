@@ -20,12 +20,16 @@ public class StartedPage extends AppCompatActivity {
 
     }
 
+    private void parseJson() {
+
+    }
+
     private void fillingCards(){
         //запрос к серверу
 
 
         for(int i = 0; i < 20; i++) {
-            String result = "Name";
+            String result = "Beef";
             View view = getLayoutInflater().inflate(R.layout.card_layout, null);
             TextView textView = (TextView) view.findViewById(R.id.text_Name);
             result = result + i;

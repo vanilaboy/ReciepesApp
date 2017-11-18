@@ -6,4 +6,6 @@
     <color name="cardColor">#FFFFFF</color>
     <color name="cardTextColor">#757575</color>
     <color name="colorAccent">#ffffff</color>
+    <color name="starNormal">#BDBDBD</color>
+    <color name="starActivated">#212121</color>
 </resources>

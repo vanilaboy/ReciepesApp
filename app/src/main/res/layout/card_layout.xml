@@ -31,41 +31,33 @@
                     android:id="@+id/imageView1"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
+                    android:layout_height="160dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ic_launcher"/>
+                    app:srcCompat="@mipmap/beef"/>
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
+                    android:layout_height="160dp"
                     android:layout_toRightOf="@+id/imageView1"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@mipmap/beef" />
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
+                    android:layout_height="160dp"
                     android:layout_toRightOf="@+id/imageView2"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@mipmap/beef" />
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
+                    android:layout_height="160dp"
                     android:layout_toRightOf="@+id/imageView3"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ic_launcher" />
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/imageView4"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@mipmap/beef" />
 
             </LinearLayout>
 
@@ -76,7 +68,7 @@
                 android:id="@+id/text_Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Card Texxxxxxxxxt"
+                android:text="Name"
                 android:textColor="@color/cardTextColor"
                 android:textSize="36sp"
                 android:layout_below="@+id/line1"/>
@@ -87,8 +79,79 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text_Name"
-                android:numStars="10"
-                android:rating="7" />
+                android:numStars="5"
+                android:rating="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagImages"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ratingBar_small">
+
+                <ImageView
+                    android:id="@+id/imageTag1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+                <ImageView
+                    android:id="@+id/imageTag8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/emoticon_poop"/>
+
+
+
+
+
+
+            </LinearLayout>
 
         </RelativeLayout>
 

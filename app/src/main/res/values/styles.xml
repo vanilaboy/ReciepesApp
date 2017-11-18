@@ -18,6 +18,9 @@
         <item name="cardBackgroundColor">@color/cardColor</item>
     </style>
 
-
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/starNormal</item>
+        <item name="colorControlActivated">@color/starActivated</item>
+    </style>
 
 </resources>
