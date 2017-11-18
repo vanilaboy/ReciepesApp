@@ -9,32 +9,88 @@
         android:id="@+id/card_view"
         style="@style/MyCardViewStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="4dp"
         android:layout_marginRight="1dp"
+        app:cardCornerRadius="2dp">
 
-        app:cardCornerRadius="2dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <TextView
-            android:id="@+id/info_text"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="bottom|center_horizontal"
-            android:text="Card Texxxxxxxxxt"
-            android:textColor="@color/cardTextColor"
-            android:textSize="36sp" />
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/line1">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ic_launcher"/>
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ic_launcher" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ic_launcher" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ic_launcher" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/text_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Texxxxxxxxxt"
+                android:textColor="@color/cardTextColor"
+                android:textSize="36sp"
+                android:layout_below="@+id/line1"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_small"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_Name"
+                android:numStars="10"
+                android:rating="7" />
+
+        </RelativeLayout>
 
 
 

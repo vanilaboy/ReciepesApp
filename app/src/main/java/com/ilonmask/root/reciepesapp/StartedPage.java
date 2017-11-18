@@ -25,9 +25,9 @@ public class StartedPage extends AppCompatActivity {
 
 
         for(int i = 0; i < 20; i++) {
-            String result = "Result";
+            String result = "Name";
             View view = getLayoutInflater().inflate(R.layout.card_layout, null);
-            TextView textView = (TextView) view.findViewById(R.id.info_text);
+            TextView textView = (TextView) view.findViewById(R.id.text_Name);
             result = result + i;
             textView.setText(result);
             linear.addView(view);
