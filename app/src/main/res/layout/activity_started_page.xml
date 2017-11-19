@@ -5,38 +5,50 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/background"
-    android:paddingBottom="-3dp"
+    android:paddingBottom="1dp"
     android:paddingLeft="1dp"
     android:paddingRight="1dp"
     android:paddingTop="1dp"
     android:textDirection="anyRtl"
     tools:context="com.ilonmask.root.reciepesapp.StartedPage">
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="0dp"
-        android:layout_height="549dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        tools:layout_editor_absoluteY="8dp">
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="566dp">
+        <ScrollView
+            android:id="@+id/scrollView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:orientation="vertical">
+            android:layout_height="450dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="1dp"
+            tools:layout_editor_absoluteY="8dp">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/scrollView1"
+             />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/editText1"
+            android:text="Search"/>
 
 
-        </LinearLayout>
-
-    </ScrollView>
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

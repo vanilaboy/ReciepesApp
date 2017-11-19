@@ -30,8 +30,10 @@ public class Food {
     public String instructions;
     private JSONArray ingredientsJSON;
     private JSONArray tagsJSON;
+    private JSONArray imagesJSON;
     public ArrayList<String> ingredients;
     public ArrayList<String> tags;
+    public ArrayList<String> images;
 
     public Food(JSONObject json) throws JSONException {
         this.json = json;
@@ -53,6 +55,23 @@ public class Food {
         instructions = json.getString("instructions");
         ingredientsJSON = json.getJSONArray("ingredients");
         tagsJSON = json.getJSONArray("tags");
+        try {
+            images = new ArrayList<>();
+            imagesJSON = json.getJSONArray("images");
+            int lgh = imagesJSON.length();
+            for(int i = 0; i < lgh; i++) {
+                images.add((String)imagesJSON.get(i));
+            }
+            if(lgh < 4) {
+                for(int i = lgh; i < 4; i++) {
+                    images.add("empty");
+                }
+            }
+        } catch (JSONException e) {
+            for(int i = 0; i < 4; i++) {
+                images.add("empty");
+            }
+        }
 
         int length = ingredientsJSON.length();
         ingredients = new ArrayList<>();
@@ -64,5 +83,7 @@ public class Food {
         for (int i = 0; i < length; i++) {
             tags.add ((String) tagsJSON.get(i));
         }
+
+
     }
 }
