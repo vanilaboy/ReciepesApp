@@ -4,6 +4,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 /**
  * Created by root on 18.11.17.
  */
@@ -26,8 +28,10 @@ public class Food {
     public int sugar;
     public int protein;
     public String instructions;
-    public JSONArray ingredientsJSON;
-    public JSONArray tagsJSON;
+    private JSONArray ingredientsJSON;
+    private JSONArray tagsJSON;
+    public ArrayList<String> ingredients;
+    public ArrayList<String> tags;
 
     public Food(JSONObject json) throws JSONException {
         this.json = json;
@@ -51,14 +55,14 @@ public class Food {
         tagsJSON = json.getJSONArray("tags");
 
         int length = ingredientsJSON.length();
-        String[] ingredients = new String[length];
+        ingredients = new ArrayList<>();
         for (int i = 0; i < length; i++) {
-            ingredients[i] = (String) ingredientsJSON.get(i);
+            ingredients.add((String) ingredientsJSON.get(i));
         }
         length = tagsJSON.length();
-        String[] tags = new String[length];
+        tags = new ArrayList<>();
         for (int i = 0; i < length; i++) {
-            tags[i] = (String) tagsJSON.get(i);
+            tags.add ((String) tagsJSON.get(i));
         }
     }
 }

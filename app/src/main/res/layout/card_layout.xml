@@ -11,10 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="1dp"
-        app:cardCornerRadius="2dp">
+        app:cardCornerRadius="3dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -94,63 +91,62 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"
+                    />
                 <ImageView
                     android:id="@+id/imageTag2"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"/>
                 <ImageView
                     android:id="@+id/imageTag3"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"
+                    />
                 <ImageView
                     android:id="@+id/imageTag4"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"
+                    />
                 <ImageView
                     android:id="@+id/imageTag5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"
+                    />
                 <ImageView
                     android:id="@+id/imageTag6"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter"
+                    />
                 <ImageView
                     android:id="@+id/imageTag7"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
+                    android:scaleType="fitCenter" />
                 <ImageView
                     android:id="@+id/imageTag8"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/emoticon_poop"/>
-
-
-
-
-
-
+                    android:scaleType="fitCenter"
+                   />
+                <ImageView
+                    android:id="@+id/imageTag9"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    />
             </LinearLayout>
 
         </RelativeLayout>
